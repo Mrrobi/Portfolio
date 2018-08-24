@@ -41,7 +41,7 @@ $('a.smooth-scroll')
         }
     });
 
-$("#fileRequest").click(function() {
+$("#file").click(function() {
     // // hope the server sets Content-Disposition: attachment!
-    window.location = 'CV_Shunjid.docx';
+    window.location = 'CV Robi.pdf';
 });
