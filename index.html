@@ -22,8 +22,8 @@
   <link href="assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
-  <link href="css/aos.css" rel="stylesheet">
-  <script src="form.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <style>
   .nav-colored { background-color:#000; }
 .nav-transparent { background-color:transparent;}
@@ -98,12 +98,19 @@
     </div>
   </div>
   <div class="about"><br><br><br><br><br></div>
-  <div class="row">
+  <div class="row" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-delay="10"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
   <div class="col-md-6">
               <!-- Tabs on Plain Card -->
-			  <div class="card card-plain ">
+			  <div class="card card-plain " >
 			  <div class="card-header card-header-rose">
-                <h4><strong>About</strong></h4>
+                <h3><strong>About</strong></h3>
 				</div>
 				</div>
 				<div class="card">
@@ -115,12 +122,13 @@
 			  <div class="col-md-6">
 			  <div class="card card-plain ">
 			  <div class="card-header card-header-rose">
-                <h4><strong>About</strong></h4>
+                <h3><strong>Basic Information</strong></h3>
 				</div>
 				</div>
 				<div class="card">
                 <div class="card-body ">
-                  <p>I am Md Robiuddin Robi.Completing my BSc in Computer Science & Engineering from United International University. This is my Portfolio web.</p>
+                  <h4><span><Strong>Age:&nbsp</strong></span>21</h4>
+				  <h4><span><Strong>Email:&nbsp</strong></span>mrrobi040@gmail.com</h4>
               </div>
 			  </div>
               <!-- End Tabs on plain Card -->
@@ -133,7 +141,14 @@
 
     
     <div class="container container-">
-        <div class="row">
+        <div class="row" data-aos="zoom-in"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
 				<div class="card card-nav-tabs text-center">
 					<div class="card-header card-header-success">
 					 <strong>Contact</strong>
@@ -240,6 +255,12 @@
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="form.js"></script>
+  <script>
+  AOS.init();
+</script>
   <script>
     $(document).ready(function() {
       //init DateTimePickers
