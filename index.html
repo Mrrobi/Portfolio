@@ -45,7 +45,7 @@
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="600" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="javascript:void(0)" onclick="scrollTobrand()">
           MD Robiuddin Robi </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
@@ -61,11 +61,26 @@
              About
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToskill()">
-              Skills
+		  <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="material-icons">apps</i> More
             </a>
+            <div class="dropdown-menu dropdown-with-icons">
+				<a class="nav-link" href="javascript:void(0)" onclick="scrollToskill()">
+					Skills
+				</a>
+				<a class="nav-link" href="javascript:void(0)" onclick="scrollToeducation()">
+					Education
+				</a>
+				<a class="nav-link" href="javascript:void(0)" onclick="scrollToprize()">
+					My Prizes
+				</a>
+				<a class="nav-link" href="javascript:void(0)" onclick="scrollTointerest()">
+					Project Interests
+				</a>
+            </div>
           </li>
+		  
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://github.com/Mrrobi" target="_blank" data-original-title="Get me on github">
               <i class="fa fa-github"></i>
@@ -602,6 +617,30 @@
       if ($('.about').length != 0) {
         $("html, body").animate({
           scrollTop: $('.about').offset().top
+        }, 1000);
+      }
+    }function scrollTointerest() {
+      if ($('.interest').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.interest').offset().top
+        }, 1000);
+      }
+    }function scrollToeducation() {
+      if ($('.education').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.education').offset().top
+        }, 1000);
+      }
+    }function scrollToprize() {
+      if ($('.prize').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.prize').offset().top
+        }, 1000);
+      }
+    }function scrollTobrand() {
+      if ($('.index-page').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.index-page').offset().top
         }, 1000);
       }
     }
