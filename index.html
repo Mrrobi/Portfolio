@@ -26,6 +26,7 @@
   <link href="assets/demo/demo.css" rel="stylesheet" />
   <link href="css/aos.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
   <style>
   .nav-colored { background-color:#000; }
 .nav-transparent { background-color:transparent;}
@@ -303,6 +304,12 @@
   AOS.init();
 </script>
   <script>
+  $(document).ready(function() {
+    AOS.init({
+        // uncomment below for on-scroll animations to played only once
+        // once: true  
+    }); // initialize animate on scroll library
+});
     $(document).ready(function() {
       //init DateTimePickers
       materialKit.initFormExtendedDatetimepickers();
